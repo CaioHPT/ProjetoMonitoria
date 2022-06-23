@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand{
+    font-weight: 800;
+}
+
 .navbar{
     background-color: black;
 }
@@ -37,6 +47,33 @@
     font-size: 27px;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0rem;
+}
+
+main h5{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.carousel{
+    width: 85%;
+    height: 28rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.carousel img{
+    width: 100%;
+    border-radius: 10px;
+}
 
 @media(max-width: 990px){
     .btnNav{
@@ -46,6 +83,12 @@
     .links{
         justify-content: center;
         margin-top: 1rem;
+    }
+}
+
+@media(max-width: 900px){
+    .carousel{
+        height: auto;
     }
 }
 
